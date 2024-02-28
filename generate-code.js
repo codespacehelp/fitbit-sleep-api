@@ -1,4 +1,5 @@
 import "dotenv/config";
+import fs from "fs";
 import { randomBytes, createHash } from "crypto";
 import readline from "readline";
 
@@ -80,3 +81,5 @@ const res = await fetch("https://api.fitbit.com/oauth2/token", {
 });
 const json = await res.json();
 console.log(json);
+// Store json.access_token in a .access_token file.
+fs.writeFileSync(".access_token", json.access_token, "utf8");

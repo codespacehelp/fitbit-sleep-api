@@ -6,7 +6,7 @@
   "main": "exchange-token.js",
   "scripts": {
     "generate-code": "node generate-code.js",
-    "exchange-token": "node exchange-token.js"
+    "get-sleep-data": "node get-sleep-data.js"
   },
   "keywords": [],
   "author": "",
