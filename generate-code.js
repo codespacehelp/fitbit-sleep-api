@@ -5,7 +5,7 @@ import readline from "readline";
 
 const clientId = process.env.FITBIT_CLIENT_ID;
 const clientSecret = process.env.FITBIT_CLIENT_SECRET;
-const scope = "sleep";
+const scope = "sleep+temperature+heartrate+respiratory_rate";
 const responseType = "code";
 if (!clientId || !clientSecret) {
   console.error(
@@ -45,7 +45,7 @@ const codeVerifier = generateCodeVerifier();
 const codeChallenge = generateCodeChallenge(codeVerifier);
 
 // prettier-ignore
-const authorizationUrl = `https://www.fitbit.com/oauth2/authorize?response_type=${responseType}&client_id=${clientId}&scope=${encodeURIComponent(scope)}&code_challenge=${codeChallenge}&code_challenge_method=S256`;
+const authorizationUrl = `https://www.fitbit.com/oauth2/authorize?response_type=${responseType}&client_id=${clientId}&scope=${scope}&code_challenge=${codeChallenge}&code_challenge_method=S256`;
 
 console.log("Code Verifier:", codeVerifier);
 console.log("Code Challenge:", codeChallenge);
