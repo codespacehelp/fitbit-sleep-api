@@ -2,4 +2,5 @@
 node_modules/
 .DS_Store
 sleep_data/
+hrv_data/
 .access_token
