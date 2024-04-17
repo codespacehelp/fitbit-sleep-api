@@ -5,7 +5,7 @@ import readline from "readline";
 
 const clientId = process.env.FITBIT_CLIENT_ID;
 const clientSecret = process.env.FITBIT_CLIENT_SECRET;
-const scope = "sleep+temperature+heartrate+respiratory_rate";
+const scope = "sleep+temperature+heartrate+respiratory_rate+oxygen_saturation";
 const responseType = "code";
 if (!clientId || !clientSecret) {
   console.error(
