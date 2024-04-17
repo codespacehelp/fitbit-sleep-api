@@ -48,3 +48,13 @@ node get-sleep.js 2024-02-27
 ```
 
 This will generate a JSON file in the `sleep_data` folder with the sleep data for the date you specified.
+
+## Get HRV data
+
+Once the access code is generated, you can get HRV data by running:
+
+```
+node get-hrv.js 2024-02-27
+```
+
+This will generate a JSON file in the `hrv_data` folder with the sleep data for the date you specified.
