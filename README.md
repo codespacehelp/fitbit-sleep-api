@@ -9,6 +9,10 @@ https://dev.fitbit.com/build/reference/web-api/developer-guide/getting-started/
 - Use "personal" app type
 - Use your personal fitbit profile URL (e.g. https://www.fitbit.com/user/YOUR_USER_ID) as the URL in all the fields.
 
+## Documentation
+
+Fitbit Developer Guide: https://dev.fitbit.com/build/reference/web-api/developer-guide/
+
 ## Set your client id and client secret
 
 Once you have your app you should have access to your client id and client secret.
